@@ -16,12 +16,10 @@ In this analysis I used:
 * Both the ```NAME``` and ```EIN``` columns were removed from input data.
 
 ### Compiling, Training, and Evaluating the Model:
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
-* For the initial modeling I used 8 neurons and 5 neurons for both the first and second hidden layers. I settled on 8 neurons and 5 neurons because they gave me best performance with the initial model while remaining lightweight enough to stay away from over training the data. 
-* Were you able to achieve the target model performance?
+* For the initial modeling I used 8 neurons and 5 neurons for both the first and second hidden layers. I settled on 8 neurons and 5 neurons for my two hidden layers because they gave me best performance with the initial model while remaining lightweight enough to stay away from over training the data. Activation functions for the hidden layers were set to ReLU and my output layer used Sigmoid.
 * Unfortunately, I was not able to reach the target model performance of 75% using the initial model.
-* What steps did you take to try and increase model performance?
 * To try and increase the performance of my initial model, I tried increasing the number of neurons, the number of hidden layers, the number of epochs, and changing both activation and output functions.
 
 ## Summary
 
+Though many optimizations were researched and used the model was not able to perform at the 75% or better level. Tne initial model saw only 72.3% efficiency while our optimized model saw only ~72% in three separate tries. Perhaps the issue with the performance level is the method used and instead using something like a Supervised Learning algorithm such as RandomForestClassifier would result in better performance levels.
